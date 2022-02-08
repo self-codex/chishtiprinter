@@ -1,0 +1,64 @@
+@import "../../base";
+
+.addInvoice {
+  flex: 2;
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-left: 15px;
+  background-color: $background-color;
+  -webkit-box-shadow: 8px 8px 14px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: -8px 8px 14px 0px rgba(0, 0, 0, 0.6);
+
+  &__transaction {
+    .add__transaction {
+      .product__details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .inputLabel {
+          display: flex;
+          flex-direction: column;
+          margin: 10px 5px;
+          label {
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+
+            span {
+              margin-left: 2px;
+              color: rgb(167, 12, 12);
+            }
+          }
+          input {
+            border: 1px solid $border-color;
+            margin: 5px 0;
+            padding: 5px;
+            color: $text-color;
+            border-radius: 5px;
+            &:nth-child(6) {
+              width: 50px;
+            }
+            &:focus {
+              outline: none;
+              border: nones;
+            }
+          }
+        }
+      }
+
+      .designer__select {
+        margin: 10px 0;
+      }
+      .product__btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10px;
+        .addBtn {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

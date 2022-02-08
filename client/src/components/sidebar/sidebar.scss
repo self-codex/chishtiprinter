@@ -1,0 +1,43 @@
+.sidebar {
+  // display: none;
+  flex: 1;
+  // width: 300px;
+  background-color: white;
+  position: sticky;
+  top: 50px;
+  &__nav {
+    padding: 20px;
+    .title {
+      margin: 0;
+      font-size: 14px;
+      color: #bac0bc;
+      margin-bottom: 7px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .sidebar__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .listItems {
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        &.active,
+        &:hover {
+          background-color: rgb(217, 217, 221);
+        }
+
+        .list__icon {
+          margin-right: 8px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
