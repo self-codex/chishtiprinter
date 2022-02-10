@@ -1,0 +1,25 @@
+{
+  "name": "mtalha",
+  "version": "1.0.0",
+  "description": "chishtiPrinterPointAdminDashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/self-codex/chishtiprinter.git"
+  },
+  "author": "MUHAMMAD TALHA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/self-codex/chishtiprinter/issues"
+  },
+  "homepage": "https://github.com/self-codex/chishtiprinter#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "json-web-token": "^3.2.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.1"
+  }
+}
