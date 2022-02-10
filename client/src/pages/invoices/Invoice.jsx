@@ -12,7 +12,7 @@ const Invoice = () => {
       <div className="invoice">
         <div className="invoice__title">
           <h2>user Invoice</h2>
-          <Link to="/newUser">
+          <Link to="/admin/newUser">
             <Button className="addUserBtn" color="primary" variant="contained">
               Add New User
             </Button>

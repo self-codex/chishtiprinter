@@ -1,20 +1,20 @@
-import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Button } from "@mui/material";
 import { Send } from "@mui/icons-material";
-
+import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-import "./customersList.scss";
-import { useState } from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import { userData } from "../../dummyData";
 
-const CustomersList = () => {
+const Designers = () => {
   const [data, setData] = useState(userData);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
+
+  //   console.log(data);
 
   const columns = [
     { field: "id", headerName: "ID", width: 70 },
@@ -23,7 +23,12 @@ const CustomersList = () => {
       headerName: "Users",
       width: 150,
       renderCell: (params) => {
-        return <div className="userList">{params.row.username}</div>;
+        return (
+          <div className="userList">
+            <img className="userListImg" src={params.row.avatar} alt="" />
+            {params.row.username}
+          </div>
+        );
       },
     },
     { field: "phone", headerName: "Phone", width: 140 },
@@ -31,9 +36,6 @@ const CustomersList = () => {
       field: "status",
       headerName: "Status",
       width: 100,
-      renderCell: (params) => {
-        return <p className="status">{params.row.status}</p>;
-      },
     },
     {
       field: "amount",
@@ -90,12 +92,12 @@ const CustomersList = () => {
         rows={data}
         disableSelectionOnClick
         columns={columns}
-        pageSize={8}
-        rowsPerPageOptions={[8]}
+        pageSize={7}
+        rowsPerPageOptions={[7]}
         checkboxSelection
       />
     </div>
   );
 };
 
-export default CustomersList;
+export default Designers;

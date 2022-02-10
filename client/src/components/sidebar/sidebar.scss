@@ -19,6 +19,10 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
       .listItems {
         text-transform: capitalize;
         display: flex;

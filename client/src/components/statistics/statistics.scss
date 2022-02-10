@@ -1,0 +1,37 @@
+@import "../../base";
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $background-color;
+  padding: 15px;
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 16px;
+    color: $text-color;
+  }
+  &__order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__progress {
+      width: 49%;
+      .order {
+        display: flex;
+        justify-content: space-between;
+        p {
+          margin: 0;
+          margin: 5px 0;
+          margin-right: 5px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
